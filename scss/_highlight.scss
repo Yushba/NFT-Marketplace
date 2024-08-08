@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/img/highlight/NFTHighlight.png);  
+    background: url(img/highlight/NFTHighlight.png);  
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,11 +24,11 @@
     @include mediaTablet {
         max-width: 834px;
         max-height: 630px;
-        background: url(/img/highlight/NFTHighlight-tablet.png);  
+        background: url(img/highlight/NFTHighlight-tablet.png);  
     }
 
     @include mediaPhone {
-        background: url(/img/highlight/NFTHighlight-phone.png);
+        background: url(img/highlight/NFTHighlight-phone.png);
         max-width: 375px;
         max-height: 590px;
     }
