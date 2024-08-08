@@ -1082,7 +1082,7 @@ body {
 }
 @media all and (max-width: 375px) {
   .highlight {
-    background: url(/img/highlight/NFTHighlight-phone.png);
+    background: url(img/highlight/NFTHighlight-phone.png);
     max-width: 375px;
     max-height: 590px;
   }
