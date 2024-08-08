@@ -1,0 +1,237 @@
+.nft-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        display: flex;
+        gap: 150px;
+
+        @include mediaTablet {
+            gap: 30px;
+        }
+    }
+}
+
+.nft-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 605px;
+
+    @include mediaTablet {
+        width: 365px;
+    }
+}
+   
+.nft-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nft-title-info {
+    font-family: $work;
+    font-size: 22px;
+    color: $caption;
+
+    @include mediaTablet {
+        font-size: 16px;
+    }
+}
+
+.nft-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.info-tags {
+    display: flex;
+    gap: 20px;
+
+    @include mediaTablet {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 30px;
+    font-family: $work;
+    font-weight: 600;
+    font-size: 16px;
+    color: $text;
+    background: $background---secondary;
+    border-radius: 20px;
+}
+
+.tags {
+    gap: 20px;
+}
+
+.nft-timer {
+    max-width: 295px;
+    max-height: 237px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 20px;
+    background: $background---secondary50;
+}
+
+.nft-timer-phone {
+    display: none;
+
+    @include mediaPhone {
+        max-width: 315px;
+        max-height: 237px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        border-radius: 20px;
+        background: $background---secondary50;
+    }
+}
+
+.nft-timer-title {
+    display: flex;
+    justify-content: center;
+    font-family: $space;
+    font-size: 12px;
+    color: $text;
+}
+
+.nft-timer-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nft-timer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 235px;
+    height: 60px;
+    color: $text;
+    background: $call-to-action;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-top: 30px;
+
+    @include mediaPhone {
+        width: 255px;
+    }
+}
+
+.header-images {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header-bg-phone {
+    display: none;
+
+    @include mediaPhone {
+        display: block;
+    }
+}
+
+.nft-cards-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nft-title {
+    display: flex;
+    gap: 100px;
+}
+
+.tb {
+    width: 683px;
+
+    @include mediaTablet {
+        width: 323px;
+    }
+
+    @include mediaPhone {
+        width: 315px;
+        text-align: center;
+    }
+}
+
+.nft-title-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 267px;
+    height: 60px;
+    font-family: $work;
+    font-weight: 600;
+    font-size: 16px;
+    color: $text;
+    border: 1px $call-to-action solid;
+    border-radius: 20px;
+}
+
+.nft-title-btn-phone {
+    display: none;
+
+    @include mediaPhone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 315px;
+        height: 60px;
+        font-family: $work;
+        font-weight: 600;
+        font-size: 16px;
+        color: $text;
+        border: 1px $call-to-action solid;
+        border-radius: 20px;
+    }
+
+
+}
+
+.nft-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @include mediaTablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mediaPhone {
+        display: flex;
+        flex-direction: column;
+         gap: 30px;
+    }
+}

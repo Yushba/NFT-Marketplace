@@ -1,0 +1,102 @@
+.how {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+
+    @include mediaTablet {
+        padding-top: 40px;
+    }
+}
+
+.how-cards {
+    display: flex;
+    gap: 30px;
+
+    @include mediaPhone {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.how-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 330px;
+    height: 440px;
+    background: $background---secondary;
+    border-radius: 20px;
+
+    @include mediaTablet {
+        width: 210px;
+        height: 320px;
+    }
+
+    @include mediaPhone {
+        width: 315px;
+        height: 157px;
+        flex-direction: row;
+    }
+}
+
+.how-card-avatar {
+
+    @include mediaTablet {
+        max-width: 160px;
+        max-height: 160px;
+    }
+
+    @include mediaPhone {
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+
+.card-titles-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 130px;
+
+    @include mediaTablet {
+        width: 170px;
+        height: 100px;
+    }
+
+    @include mediaPhone {
+        width: 155px;
+        height: 117px;
+    }
+
+    .card-subtitle {
+        text-align: center;
+
+        @include mediaPhone {
+            text-align: left;
+        }
+    }
+
+    
+    .card-title {
+        z-index: 2;
+        
+        p{
+            font-family: $work;
+            font-size: 22px;
+            font-weight: 600;
+            color: $text;
+                
+            @include mediaTablet {
+                font-size: 16px;
+            } 
+        }
+    }
+}
+

@@ -1,0 +1,176 @@
+.highlight {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/img/highlight/NFTHighlight.png);  
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1280px;
+    max-height: 640px;
+    
+    .container {
+        padding-top: 360px;
+        display: flex;
+
+        @include mediaPhone {
+            padding-top: 120px;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    @include mediaTablet {
+        max-width: 834px;
+        max-height: 630px;
+        background: url(/img/highlight/NFTHighlight-tablet.png);  
+    }
+
+    @include mediaPhone {
+        background: url(/img/highlight/NFTHighlight-phone.png);
+        max-width: 375px;
+        max-height: 590px;
+    }
+
+}
+
+.highlight-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 775px;
+
+    @include mediaTablet {
+        width: 375px;
+    }
+
+    @include mediaPhone {
+        width: 315px;
+    }
+}
+
+.highlight-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    background: $background---secondary;
+    width: 151px;
+    height: 44px;
+}
+
+.highlight-title {
+    font-family: $work;
+    font-weight: 600;
+    font-size: 51px;
+    color: $text;
+
+    @include mediaTablet {
+        font-size: 38px;
+    }
+}
+
+.highlight-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 198px;
+    height: 60px;
+    color: $background;
+    background: $text;
+    font-family: $work;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px
+}
+
+.highlight-btn-phone {
+    display: none;
+
+    @include mediaPhone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 315px;
+        height: 60px;
+        color: $background;
+        background: $text;
+        font-family: $work;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 20px
+    }
+}
+
+.highlight-timer {
+    max-width: 295px;
+    max-height: 147px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 20px;
+    background: $background---secondary50;
+
+    @include mediaTablet {
+        justify-content: flex-start;
+    }
+
+    @include mediaPhone {
+        max-width: 315px;
+    }
+}
+
+.highlight-timer-title {
+    display: flex;
+    justify-content: center;
+    font-family: $space;
+    font-size: 12px;
+    color: $text;
+}
+
+.highlight-timer-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.time {
+    display: flex;
+    gap: 10px;
+}
+
+.timer-element {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 53px;
+}
+
+.time-number {
+    font-family: $space;
+    font-weight: 700;
+    font-size: 38px;
+    color: $text;
+}
+
+.time-circles {
+    font-family: $space;
+    font-weight: 700;
+    font-size: 38px;
+    color: $text;
+    width: 18px;
+}
+
+.time-text {
+    text-align: left;
+    font-family: $space;
+    font-size: 12px;
+    color: $text;
+}

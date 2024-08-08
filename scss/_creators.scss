@@ -1,0 +1,87 @@
+.creators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.creators-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    @include mediaTablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mediaPhone {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.creators-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    width: 240px;
+    height: 238px;
+    background: $background---secondary;
+    border-radius: 20px;
+
+    .card-text-block {
+        text-align: center;
+
+        @include mediaTablet {
+            text-align: left;
+        }
+    }
+
+    @include mediaTablet {
+        width: 330px;
+        height: 100px;
+        flex-direction: row;
+    }
+
+    @include mediaPhone {
+        width: 315px;
+        padding: 20px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.card-numder-abs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $space;
+    font-weight: 700;
+    font-size: 16px;
+    color: $caption;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: $background;
+    border-radius: 20px;
+    left: 20px;
+    top: 18px;
+
+    @include mediaPhone {
+        top: 13px;
+        left: 12px;
+    }
+}
+
+.card-avatar {
+
+    @include mediaTablet {
+        max-width: 60px;
+        max-height: 60px;
+    }
+}

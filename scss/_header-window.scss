@@ -1,0 +1,148 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    @include mediaPhone {
+        flex-direction:  column;
+        margin-bottom: 40px;
+    }
+}
+
+.content-img-tablet {
+    display: none;
+
+    @include mediaTablet {
+        display: block;
+    }
+}
+
+.content-img-phone {
+    display: none;
+
+    @include mediaPhone {
+        display: block;
+    }
+}
+
+.create-acc-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 460px;
+
+    @include mediaPhone {
+        justify-content: center;
+        align-items: center;
+        max-width:  315px;
+    }
+}
+
+.form-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include mediaPhone {
+        text-align: center;
+    }
+}  
+
+.acc-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 360px;
+}
+
+.acc-form-item {
+    position: relative;
+
+    input {
+        width: 330px;
+        height: 46px;
+        background: $text;
+        border-radius: 20px;
+        padding: 0 52px;
+
+        @include mediaPhone {
+            width: 315px;
+        }
+    }
+}
+
+.form-icon {
+    position: absolute;
+    left: 20px;
+    top: 13px;
+}
+
+.create-acc-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 46px;
+    background: $call-to-action;
+    border-radius: 20px;
+    margin-top: 15px;
+    color: $text;
+    font-family: $work;
+    font-weight: 600;
+    font-size: 16px;
+
+    @include mediaPhone {
+        width: 315px;
+    }
+}
+
+.connect-wallet-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 460px;
+
+    @include mediaPhone {
+        justify-content: center;
+        align-items: center;
+        max-width:  315px;
+    }
+}
+
+.cta-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.connect-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.connect-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 72px;
+    background: $background---secondary;
+    border-radius: 20px;
+    border: 1px $call-to-action solid;
+    font-family: $work;
+    font-size: 22px;
+    color: $text;
+
+    @include mediaPhone {
+        width: 315px;
+    }
+}
+
+.connect-btn-icon {
+    position: absolute;
+    left: 40px;
+    top: 16px;
+}

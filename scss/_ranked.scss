@@ -1,0 +1,203 @@
+.ranked {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.ranked-nav {
+    display: flex;
+}
+
+.ranked-nav-phone {
+    display: none;
+
+    @include mediaPhone {
+        display: flex;
+    }
+}
+
+.ranked-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 262px;
+    gap: 14.5px;
+    font-family: $work;
+    font-weight: 600;
+    font-size: 22px;
+    color: $caption;
+    cursor: pointer;
+
+    @include mediaTablet {
+        font-size: 16px;
+        width: 170px;
+    }
+
+    @include mediaPhone {
+        width: 78.75px;
+    }
+
+}
+
+.ranked-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ranked-list-critarion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px $caption solid;
+    padding: 12px 154px 12px 20px;
+
+    @include mediaTablet {
+        margin: 0 auto;
+        max-width: 690px;
+        padding: 12px 20px;
+    }
+
+    @include mediaPhone {
+        max-width: 315px;
+        padding: 16px 0px 16px 20px;
+    }
+}
+
+.critarion-artist {
+    font-family: $space;
+    font-size: 16px;
+    color: $caption;
+    width: 430px;
+}
+
+.critarion-list {
+    display: flex;
+    gap: 30px;
+
+    @include mediaTablet {
+        gap: 20px;
+    }
+    @include mediaPhone {
+        gap: 0;
+    }
+}
+
+.critarion-item {
+    font-family: $space;
+    font-size: 16px;
+    color: $caption;
+    width: 160px;
+}
+
+.ranked-list-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 12px 154px 12px 70px;
+    background: $background---secondary;
+    border-radius: 20px;
+    
+    @include mediaTablet {
+        margin: 0 auto;
+        width: 690px;
+        height: 60px;
+        padding: 12px 20px 12px 64px;
+        gap: 20px;
+    }
+
+    @include mediaPhone {
+        max-width: 315px;
+        padding: 16px 15px 16px 44px;
+        gap: 14px;
+    }
+}
+
+.number {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $space;
+    font-weight: 700;
+    font-size: 16px;
+    color: $caption;
+    width: 30px;
+    height: 30px;
+    background: $background;
+    border-radius: 20px;
+    left: 20px;
+    top: 27px;
+
+    @include mediaTablet {
+        left: 20px;
+        top: 14px;
+        background-color: $background---secondary;
+    }
+
+    @include mediaPhone {
+        left: 8px;
+    }
+}
+
+.ranked-user {
+    display: flex;
+    align-items: center;
+    gap: 14.5px;
+
+    @include mediaTablet {
+        gap: 12px;
+    }
+}
+
+.avatar-ranked {
+    width: 60px;
+    height: 60px;
+
+    @include mediaTablet {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.avatar-text-ranked {
+    font-family: $work;
+    font-weight: 600;
+    font-size: 22px;
+    color: $text;
+    width: 300px;
+
+    @include mediaTablet {
+        width: 240px;
+    }
+
+    @include mediaPhone {
+        font-size: 16px;
+        width: 167px;
+    }
+
+    @include mediaPhone {
+        width: 145px;
+    }
+}
+
+.ranked-stats {
+    display: flex;
+    gap: 20px;
+}
+
+.stats-item {
+    font-family: $space;
+    font-size: 16px;
+    color: $text;
+    width: 160px;
+
+    @include mediaTablet {
+        width: 100px;
+    }
+}

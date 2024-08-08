@@ -1,0 +1,239 @@
+.header-content {
+    display: flex;
+    flex-direction: column;
+
+    @include mediaTablet {
+        align-items: flex-start
+    }
+}
+
+.header-images {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.header-bg-tablet {
+    display: none;
+
+    @include mediaTablet {
+        display: block;
+    }
+}
+
+.header-bg-phone {
+    display: none;
+
+    @include mediaPhone {
+        display: block;
+    }
+}
+
+.header-avatar {
+    position: absolute;
+    left: 115px;
+    bottom: -50px;
+    border: 2px $background solid;
+    border-radius: 20px;
+
+    @include mediaTablet {
+        left: 75px;
+    }
+
+    @include mediaPhone {
+        left: 127.5px;
+    }
+}
+
+.header-profile-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        display: flex;
+
+        @include mediaTablet {
+            margin-top: 90px;
+        }
+
+        @include mediaPhone {
+            margin-top: 80px;
+        }
+    }
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 600px;
+}
+
+.profile-name {
+    font-family: $work;
+    font-weight: 600;
+    font-size: 51px;
+    color: $text;
+
+    @include mediaPhone {
+        font-size: 38px;
+    }
+}
+
+.profile-stats {
+    display: flex;
+    gap: 60px;
+
+    @include mediaTablet {
+        gap: 20px;
+    }
+}
+
+.stats-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @include mediaTablet {
+        width: 156px;
+        gap: 3px;
+    }
+}
+
+.stats-numder {
+    font-family: $space;
+    font-weight: 700;
+    font-size: 28px;
+    color: $text;
+
+    @include mediaTablet {
+        font-size: 22px;
+    }
+}
+
+.stats-critarion {
+    font-family: $work;
+    font-size: 22px;
+    color: $text;
+
+    @include mediaTablet {
+        font-size: 16px;
+    }
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-critarion {
+    font-family: $space;
+    font-weight: 700;
+    font-size: 22px;
+    color: $caption;
+
+    @include mediaTablet {
+        font-size: 16px;
+    }
+}
+
+.info {
+    display: flex;
+    gap: 10px;
+    font-family: $work;
+    font-size: 22px;
+    color: $text;
+    
+    @include mediaTablet {
+        font-size: 16px;
+    }
+}
+
+.info-icon {
+
+    @include mediaTablet {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.profile-btns {
+    display: flex;
+    gap: 20px;
+    width: 450px;
+}
+
+.profile-btns-tablet {
+    display: none;
+    gap: 20px;
+    width: 450px;
+
+    @include mediaTablet {
+        display: flex;
+    }
+
+    @include mediaPhone {
+        flex-direction: column;
+    }
+}
+
+.link-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: $call-to-action;
+    border-radius: 20px;
+    color: $text;
+    font-family: $work;
+    font-weight: 600;
+    font-size: 16px;
+    width: 186px;
+    height: 60px;
+
+    @include mediaPhone {
+        width: 315px;
+    }
+}
+
+.follow-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: 1px $call-to-action solid;
+    border-radius: 20px;
+    color: $text;
+    font-family: $work;
+    font-weight: 600;
+    font-size: 16px;
+    width: 145px;
+    height: 60px;
+
+    
+    @include mediaPhone {
+        width: 315px;
+    }   
+}
+
+.follow-btn-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: $call-to-action;
+    border-radius: 20px;
+    color: $text;
+    font-family: $work;
+    font-weight: 600;
+    font-size: 16px;
+    width: 145px;
+    height: 60px;
+
+    
+    @include mediaPhone {
+        width: 315px;
+    }   
+}

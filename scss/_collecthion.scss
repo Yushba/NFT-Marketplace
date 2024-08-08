@@ -1,0 +1,45 @@
+.collecthion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.collecthion-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.collecthion-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-sm-img {
+    display: flex;
+    gap: 15px;
+    width: 330px;
+}
+
+.card-sm-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background: $call-to-action;
+    border-radius: 20px;
+    font-family: $space;
+    font-weight: 700;
+    font-size: 22px;
+    color: $text;
+}
+

@@ -1,0 +1,211 @@
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content-block {
+    display: flex;
+    gap: 30px;
+
+    @include mediaTablet {
+        gap: 20px;
+    }
+
+    @include mediaPhone {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+.header-text-block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    @include mediaPhone {
+        width: 100%;
+        gap: 40px;
+    }
+}
+
+.header-title {
+    font-family: $work;
+    font-weight: 600;
+    font-size: 62px;
+    color: $text;
+
+    @include mediaTablet {
+        font-size: 38px;
+    }
+
+    
+    @include mediaPhone {
+        font-size: 28px;   
+    }
+} 
+
+.header-additional {
+    width: 105%;
+    display: flex;
+    gap: 30px;
+
+    @include mediaPhone {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.additional-number {
+    font-family: $space;
+    font-weight: 700;
+    font-size: 28px;
+    color: $text;
+    
+    @include mediaTablet {
+        font-size: 22px;   
+    }
+}
+
+.additional-text {
+    font-family: $work;
+    font-size: 24px;
+    color: $text;
+
+    
+    @include mediaTablet {
+        font-size: 16px;   
+    }
+}
+
+.header-cards {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: $background---secondary;
+    border-radius: 20px;
+    width: 307px;
+    height: 100px;
+}
+
+.user-logo {
+    width: 60px;
+    height: 60px;
+}
+
+.card-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-title {
+    font-family: $work;
+    font-weight: 600;
+    font-size: 22px;
+    color: $text;
+}
+
+.card-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: $caption;
+    font-size: 16px;
+
+    @include mediaTablet {
+        font-size: 12px;
+    }
+}
+
+.price-accent {
+    font-family: $space;
+    font-size: 16px;
+    color: $text;
+}
+
+
+.card-img-phone {
+    display: none;
+
+    @include mediaPhone {
+        display: block;
+    }
+}
+
+.card-img-text-block {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    width: 510px;
+    height: 109px;
+    background: $background---secondary;
+    border-radius: 0 0 20px 20px;
+    padding: 22px 20px;
+
+    @include mediaTablet {
+        width: 330px;        
+    }
+
+    @include mediaPhone {
+        width: 315px;
+    }
+}
+
+.card-bg {
+    border-radius: 20px 20px 0 0;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 24px;
+    height: 24px;
+}
+
+.user-text {
+    font-family: $work;
+    font-size: 16px;
+    color: $text;
+}
+
+.card-price {
+    width: 280px;
+    height: 80px;
+    display: flex;
+    background: $background---secondary;
+    border: 1px $caption solid;
+    border-radius: 20px;
+}
+
+.card-price-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 30px 20px 18px 20px;
+    gap: 5px;
+}
+
+.price-title {
+    font-family: $space;
+    font-size: 12px;
+    color: $caption;
+}

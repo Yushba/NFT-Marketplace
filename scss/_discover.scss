@@ -1,0 +1,60 @@
+.discover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+
+    @include mediaTablet {
+        gap: 40px;
+    }
+}
+
+.discover-cards {
+    display: flex;
+    gap: 30px;
+
+    @include mediaPhone {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.discover-card-phone {
+    display: none;
+
+    @include mediaPhone {
+        display: block !important;
+    }
+}
+
+.card-text-area {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 330px;
+    height: 173px;
+    background: $background---secondary;
+    border-radius: 0 0 20px 20px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @include mediaPhone {
+        width: 315px;
+        padding: 20px;
+    }
+}
+
+.card-discover-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.card-price-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}

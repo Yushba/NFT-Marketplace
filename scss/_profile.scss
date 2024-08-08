@@ -1,0 +1,56 @@
+.profile-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+}
+
+.discover-nav {
+    display: flex;
+    background: $background;
+}
+
+.discover-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14.5px;
+    font-family: $work;
+    font-weight: 600;
+    font-size: 22px;
+    color: $caption;
+    width: 350px;
+    cursor: pointer;
+
+    @include mediaTablet {
+        gap: 19px;
+        width: 226px;
+        font-size: 16px;
+    }
+
+    @include mediaPhone {
+        width: 105px;
+    }
+}
+
+
+.profile-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @include mediaTablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mediaPhone {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
