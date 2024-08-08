@@ -1055,7 +1055,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/img/highlight/NFTHighlight.png);
+  background: url(img/highlight/NFTHighlight.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1077,7 +1077,7 @@ body {
   .highlight {
     max-width: 834px;
     max-height: 630px;
-    background: url(/img/highlight/NFTHighlight-tablet.png);
+    background: url(img/highlight/NFTHighlight-tablet.png);
   }
 }
 @media all and (max-width: 375px) {
