@@ -70,3 +70,20 @@ unfollowBtnTab.addEventListener('click', () => {
     unfollowBtnTab.classList.add('none');
     followBtnTab.classList.remove('none');
 });
+
+gsap.registerPlugin(Flip);
+
+const links = document.querySelectorAll('.discover-nav-item');
+const activeNav = document.querySelector('.line');
+
+links.forEach((link) => {
+    link.addEventListener('click', () => {
+        
+        const state = Flip.getState(activeNav);
+        link.appendChild(activeNav);
+        Flip.from (state, {
+            duration: 0.5,
+            absolute:true,
+        })
+    })
+})
