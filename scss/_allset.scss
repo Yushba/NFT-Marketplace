@@ -65,6 +65,36 @@
     }
 }
 
+
+.navigathion-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 152px;
+    height: 60px;
+    background: $call-to-action;
+    border-radius: 20px;
+    transition: all 0.5s;
+
+    a {
+        font-family: $work;
+        font-size: 16px;
+        font-weight: 600;
+        color: $text;
+    }
+
+    :hover {
+        color: $text !important;
+    }
+
+}
+
+.navigathion-btn:hover {
+    background: none;
+    border: 1px $call-to-action solid;
+}
+
 .ctaborder-btn {
     display: flex;
     justify-content: center;
@@ -78,10 +108,32 @@
     color: $text;
     border: 1px $call-to-action solid;
     border-radius: 20px;
+    transition: all 0.5s;
+    
+    :hover {
+        color: $text !important;
+    }
 
     @include mediaTablet {
         width: 187px;
     }
+}
+
+.ctaborder-btn:hover {
+    background: $call-to-action;
+    border: none;
+
+    .creators-btn-icon {
+        display: none;
+    }
+
+    .icon-hover{
+        display: block;
+    }
+}
+
+.icon-hover{
+    display: none;
 }
 
 .ctaborder-btn-phone {
@@ -123,10 +175,16 @@
     font-size: 16px;
     font-weight: 600;
     border-radius: 20px;
+    transition: all 0.5s;
     
     @include mediaPhone {
         width: 315px;
     }
+}
+
+.cta-btn:hover {
+    background: none;
+    border: 1px $call-to-action solid;
 }
 
 .form {

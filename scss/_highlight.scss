@@ -84,7 +84,21 @@
     font-family: $work;
     font-size: 16px;
     font-weight: 600;
-    border-radius: 20px
+    border-radius: 20px;
+    transition: all 0.5s ease-in;
+}
+
+.highlight-btn:hover {
+    color: $text;
+    background: $call-to-action;
+
+    .highlight-btn-icon{
+        display: none;
+    }
+
+    .icon-hover{
+        display: block;
+    }
 }
 
 .highlight-btn-phone {

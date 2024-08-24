@@ -70,6 +70,11 @@
             width: 315px;
         }
     }
+
+    :focus {
+        outline: none;
+        box-shadow: 0 0 8px $call-to-action;
+    }
 }
 
 .form-icon {
@@ -91,10 +96,16 @@
     font-family: $work;
     font-weight: 600;
     font-size: 16px;
+    transition: all 0.5s;
 
     @include mediaPhone {
         width: 315px;
     }
+}
+
+.create-acc-btn:hover {
+    background: none;
+    border: 1px $call-to-action solid;
 }
 
 .connect-wallet-cta {
@@ -135,6 +146,7 @@
     font-family: $work;
     font-size: 22px;
     color: $text;
+    transition: all 0.5s;
 
     @include mediaPhone {
         width: 315px;
@@ -145,4 +157,10 @@
     position: absolute;
     left: 40px;
     top: 16px;
+}
+
+
+.connect-btn:hover {
+    background: none;
+    color: $call-to-action;
 }

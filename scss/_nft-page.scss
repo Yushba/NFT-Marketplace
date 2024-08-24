@@ -140,10 +140,16 @@
     font-weight: 600;
     border-radius: 20px;
     margin-top: 30px;
+    transition: all 0.5s;
 
     @include mediaPhone {
         width: 255px;
     }
+}
+
+.nft-timer-btn:hover {
+    background: none;
+    border: 1px $call-to-action solid;
 }
 
 .header-images {
@@ -197,6 +203,19 @@
     color: $text;
     border: 1px $call-to-action solid;
     border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.nft-title-btn:hover {
+    background: $call-to-action;
+
+    .creators-btn-icon{
+        display: none;
+    }
+
+    .icon-hover {
+        display: block;
+    }
 }
 
 .nft-title-btn-phone {

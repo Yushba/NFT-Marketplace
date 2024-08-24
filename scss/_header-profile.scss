@@ -192,10 +192,17 @@
     font-size: 16px;
     width: 186px;
     height: 60px;
+    transition: all 0.5s;
 
     @include mediaPhone {
         width: 315px;
     }
+}
+
+.link-btn:hover {
+    background: none;
+    border: 1px $call-to-action solid;
+
 }
 
 .follow-btn {
@@ -211,11 +218,15 @@
     font-size: 16px;
     width: 145px;
     height: 60px;
-
+    transition: all 0.5s;
     
     @include mediaPhone {
         width: 315px;
     }   
+}
+
+.follow-btn:hover{
+    background: $call-to-action;
 }
 
 .follow-btn-active {

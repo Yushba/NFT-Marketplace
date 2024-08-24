@@ -165,6 +165,32 @@ body {
   }
 }
 
+.navigathion-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 152px;
+  height: 60px;
+  background: #a259ff;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+.navigathion-btn a {
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+.navigathion-btn :hover {
+  color: #fff !important;
+}
+
+.navigathion-btn:hover {
+  background: none;
+  border: 1px #a259ff solid;
+}
+
 .ctaborder-btn {
   display: flex;
   justify-content: center;
@@ -178,11 +204,30 @@ body {
   color: #fff;
   border: 1px #a259ff solid;
   border-radius: 20px;
+  transition: all 0.5s;
+}
+.ctaborder-btn :hover {
+  color: #fff !important;
 }
 @media all and (max-width: 834px) {
   .ctaborder-btn {
     width: 187px;
   }
+}
+
+.ctaborder-btn:hover {
+  background: #a259ff;
+  border: none;
+}
+.ctaborder-btn:hover .creators-btn-icon {
+  display: none;
+}
+.ctaborder-btn:hover .icon-hover {
+  display: block;
+}
+
+.icon-hover {
+  display: none;
 }
 
 .ctaborder-btn-phone {
@@ -226,11 +271,17 @@ body {
   font-size: 16px;
   font-weight: 600;
   border-radius: 20px;
+  transition: all 0.5s;
 }
 @media all and (max-width: 375px) {
   .cta-btn {
     width: 315px;
   }
+}
+
+.cta-btn:hover {
+  background: none;
+  border: 1px #a259ff solid;
 }
 
 .form {
@@ -596,6 +647,10 @@ body {
   font-weight: 600;
   font-size: 16px;
   color: #fff;
+  transition: all 0.3s ease-in;
+}
+.navigathion-item :hover {
+  color: #a259ff;
 }
 
 .menu {
@@ -617,7 +672,7 @@ body {
   position: absolute;
   top: -40px;
   right: 0;
-  background: #181818;
+  background: #2b2b2b;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -636,10 +691,13 @@ body {
   font-size: 16px;
   margin: 0 auto;
 }
-
 .dropdown-li a {
   color: #f3f3f3;
   text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+.dropdown-li :hover {
+  color: #a259ff;
 }
 
 .dropdown-li:hover {
@@ -653,23 +711,6 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 80px 60px;
-}
-
-.navigathion-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  width: 152px;
-  height: 60px;
-  background: #a259ff;
-  border-radius: 20px;
-}
-.navigathion-btn a {
-  font-family: "Work Sans";
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
 }
 
 .collecthion {
@@ -1141,6 +1182,18 @@ body {
   font-size: 16px;
   font-weight: 600;
   border-radius: 20px;
+  transition: all 0.5s ease-in;
+}
+
+.highlight-btn:hover {
+  color: #fff;
+  background: #a259ff;
+}
+.highlight-btn:hover .highlight-btn-icon {
+  display: none;
+}
+.highlight-btn:hover .icon-hover {
+  display: block;
 }
 
 .highlight-btn-phone {
@@ -1655,6 +1708,10 @@ body {
     width: 315px;
   }
 }
+.acc-form-item :focus {
+  outline: none;
+  box-shadow: 0 0 8px #a259ff;
+}
 
 .form-icon {
   position: absolute;
@@ -1675,11 +1732,17 @@ body {
   font-family: "Work Sans";
   font-weight: 600;
   font-size: 16px;
+  transition: all 0.5s;
 }
 @media all and (max-width: 375px) {
   .create-acc-btn {
     width: 315px;
   }
+}
+
+.create-acc-btn:hover {
+  background: none;
+  border: 1px #a259ff solid;
 }
 
 .connect-wallet-cta {
@@ -1721,6 +1784,7 @@ body {
   font-family: "Work Sans";
   font-size: 22px;
   color: #fff;
+  transition: all 0.5s;
 }
 @media all and (max-width: 375px) {
   .connect-btn {
@@ -1732,6 +1796,11 @@ body {
   position: absolute;
   left: 40px;
   top: 16px;
+}
+
+.connect-btn:hover {
+  background: none;
+  color: #a259ff;
 }
 
 .header-content {
@@ -1942,11 +2011,17 @@ body {
   font-size: 16px;
   width: 186px;
   height: 60px;
+  transition: all 0.5s;
 }
 @media all and (max-width: 375px) {
   .link-btn {
     width: 315px;
   }
+}
+
+.link-btn:hover {
+  background: none;
+  border: 1px #a259ff solid;
 }
 
 .follow-btn {
@@ -1962,11 +2037,16 @@ body {
   font-size: 16px;
   width: 145px;
   height: 60px;
+  transition: all 0.5s;
 }
 @media all and (max-width: 375px) {
   .follow-btn {
     width: 315px;
   }
+}
+
+.follow-btn:hover {
+  background: #a259ff;
 }
 
 .follow-btn-active {
@@ -2414,11 +2494,17 @@ body {
   font-weight: 600;
   border-radius: 20px;
   margin-top: 30px;
+  transition: all 0.5s;
 }
 @media all and (max-width: 375px) {
   .nft-timer-btn {
     width: 255px;
   }
+}
+
+.nft-timer-btn:hover {
+  background: none;
+  border: 1px #a259ff solid;
 }
 
 .header-images {
@@ -2475,6 +2561,17 @@ body {
   color: #fff;
   border: 1px #a259ff solid;
   border-radius: 20px;
+  transition: all 0.5s;
+}
+
+.nft-title-btn:hover {
+  background: #a259ff;
+}
+.nft-title-btn:hover .creators-btn-icon {
+  display: none;
+}
+.nft-title-btn:hover .icon-hover {
+  display: block;
 }
 
 .nft-title-btn-phone {
